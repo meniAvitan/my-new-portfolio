@@ -5,15 +5,14 @@
 }
 
 .n-left {
-    flex: 1;
     align-items: center;
     display: flex;
-    gap: 2rem;
 }
 
 .n-name {
     font-size: 1.3rem;
     font-weight: bold;
+    margin-right: 10rem;
 }
 
 .n-right {
@@ -30,7 +29,7 @@
 
 .n-list>ul {
     display: flex;
-    gap: 2rem;
+    margin-left: 10rem;
     list-style-type: none;
 }
 
@@ -45,9 +44,7 @@
 }
 
 @media screen and (max-width: 480px) {
-    .n-left {
-        gap: 12rem;
-    }
+    .n-left {}
     .n-name {
         width: auto;
     }
