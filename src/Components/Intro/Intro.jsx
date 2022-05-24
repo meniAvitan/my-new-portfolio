@@ -55,15 +55,17 @@ function Intro() {
                 whileInView={{ left: '-24%' }}
                 transition={{ transition }}
            
-           src={glassesImogi} alt="" />
-
+           src={glassesImogi} alt="" 
+           className="f-1"/>
+            
            <motion.div
                 initial={{ top: "-4%", left: "74%" }}
                 whileInView={{ left: "68%" }}
                 transition={transition}
                 
+                
            style={{ top: '-4%',  left: '68%'}}
-           className="floating-div">
+           className="floating-div f-2">
                <FloatingDiv image={Crown} txt1 = 'Web' txt2 = 'Developer'/>
            </motion.div>
 
@@ -72,7 +74,7 @@ function Intro() {
                 whileInView={{ left: "0rem" }}
                 transition={transition}
            style={{ top: '18rem',  left: '0'}}
-           className="floating-div">
+           className="floating-div f-3">
                <FloatingDiv image={thumbup} txt1 = 'Best design' txt2 = 'Meni-web'/>
            </motion.div>
            <div className="blur" style={{ background: "rgb(238 210 255)" }}></div>

@@ -9,7 +9,6 @@
     position: relative;
     flex: 1;
     flex-direction: column;
-    gap: 2rem;
 }
 
 .i-mame {
@@ -33,7 +32,7 @@
     color: var(--gray);
     font-weight: 100;
     font-size: 20px;
-    margin-top: 10px;
+    margin: 20px 0;
 }
 
 .i-button {
@@ -102,7 +101,18 @@
     filter: blur(72px);
 }
 
+@media screen and (max-width: 1000px) {
+    .f-2 {
+        top: 25% !important;
+        left: 63% !important;
+    }
+}
+
 @media screen and (max-width: 480px) {
+    .f-2 {
+        top: 5% !important;
+        left: 63% !important;
+    }
     .blur {
         width: 15rem;
         height: 14rem;
@@ -120,7 +130,12 @@
     }
     .floating-div:nth-of-type(1) {
         /* display: none; */
-        top: -7rem !important;
+        top: -10rem !important;
+        ;
+    }
+    .floating-div:nth-of-type(4) {
+        /* display: none; */
+        left: -17rem !important;
         ;
     }
 }

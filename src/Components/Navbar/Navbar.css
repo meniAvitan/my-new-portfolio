@@ -12,7 +12,7 @@
 .n-name {
     font-size: 1.3rem;
     font-weight: bold;
-    margin-right: 10rem;
+    margin-right: 1rem;
 }
 
 .n-right {
@@ -29,8 +29,12 @@
 
 .n-list>ul {
     display: flex;
-    margin-left: 10rem;
+    margin-left: 0rem;
     list-style-type: none;
+}
+
+.n-list>ul>li {
+    margin: 10px;
 }
 
 .n-list>ul>li:hover {
@@ -43,15 +47,25 @@
     margin-left: 2rem;
 }
 
-@media screen and (max-width: 480px) {
-    .n-left {}
+@media screen and (max-width: 880px) {
+    .n-list>ul {
+        margin-left: 10rem;
+    }
     .n-name {
         width: auto;
+        margin-right: 25rem;
     }
     .n-list {
         display: none;
     }
     .n-button {
         display: none;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .n-name {
+        width: auto;
+        margin-right: 10rem;
     }
 }
