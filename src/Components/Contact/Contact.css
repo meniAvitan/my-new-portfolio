@@ -17,8 +17,15 @@
 .c-right>form {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
     align-items: center;
+}
+
+.c-right input {
+    margin-bottom: 2rem;
+}
+
+.c-right textarea {
+    margin-bottom: 2rem;
 }
 
 .c-right .user {

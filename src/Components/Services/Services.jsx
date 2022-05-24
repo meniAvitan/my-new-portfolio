@@ -5,7 +5,7 @@ import Glasses from '../../img/glasses.png';
 import Humble from '../../img/humble.png';
 import Card from '../Card/Card';
 import { motion } from "framer-motion";
-
+import CV from '../../files/Menachem_Avitan_-_Software_Developer 1.docx';
 import { themeContext } from "../../Context";
 
 
@@ -22,13 +22,15 @@ const Services = () => {
   return (
     <div className="services" id="services">
         <div className="awesome">
-        <span style={{ color: darkMode ? "white" : "" }}>Hy! I Am</span>
+        <span style={{ color: darkMode ? "white" : "" }}>My Awesome</span>
             <span>Services</span>
             <span>
                 What i offer in my job
             </span>
-            
-            <button className="button s-button">Download CV</button>
+            <a href={CV} download>
+                <button className="button s-button">Download CV</button>
+            </a>
+           
             <div className="blur s-blur1" style={{ background: "#ABF1FF94" }}></div>
         </div>
         <div className="cards">
@@ -42,7 +44,7 @@ const Services = () => {
           <Card
             emoji={HeartEmoji}
             heading={"Design"}
-            detail={"Figma, Sketch, Photoshop, Adobe Illustrator, Adobe xd"}
+            detail={"Figma , Photoshop, Adobe Illustrator, Adobe xd"}
           />
         </motion.div>
         {/* second card */}
@@ -54,8 +56,8 @@ const Services = () => {
         >
           <Card
             emoji={Glasses}
-            heading={"Developer"}
-            detail={"Html, Css, JavaScript, React, Nodejs, Express"}
+            heading={"Frontend"}
+            detail={"Html | Css | JavaScript | React | Angular | Bootstrap"}
           />
         </motion.div>
         {/* 3rd */}
@@ -67,9 +69,9 @@ const Services = () => {
         >
           <Card
             emoji={Humble}
-            heading={"UI/UX"}
+            heading={"Backend"}
             detail={
-              "Lorem ispum dummy text are usually use in section where we need some random text"
+              "PHP | Mysql | Node js | .NET"
             }
             color="rgba(252, 166, 31, 0.45)"
           />

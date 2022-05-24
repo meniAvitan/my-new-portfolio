@@ -1,10 +1,10 @@
 import React, { useContext } from "react";
 import './Work.css';
-import Upwork from '../../img/Upwork.png';
-import Amazon from '../../img/amazon.png';
-import Fiverr from '../../img/fiverr.png';
-import diamondsAlley from '../../img/Facebook.png';
-import ExtraPizza from '../../img/Shopify.png';
+import Flytype from '../../img/flytype.png';
+import Opensky from '../../img/opensky.png';
+import Remax from '../../img/remax.png';
+import diamondsAlley from '../../img/diamond.png';
+import ExtraPizza from '../../img/extrapizza.png';
 import { motion } from "framer-motion";
 import { themeContext } from "../../Context";
 
@@ -36,13 +36,13 @@ function Work() {
           className="w-maincircle"
         >
                 <div className="w-seccircle">
-                    <img src={Upwork} alt="" />
+                    <img src={Remax} alt="" />
                 </div>
                 <div className="w-seccircle">
-                    <img src={Amazon} alt="" />
+                    <img src={Opensky} alt="" />
                 </div>
                 <div className="w-seccircle">
-                    <img src={Fiverr} alt="" />
+                    <img src={Flytype} alt="" />
                 </div>
                 <div className="w-seccircle">
                     <img src={ExtraPizza} alt="" />
